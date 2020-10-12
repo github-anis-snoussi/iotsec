@@ -1,0 +1,178 @@
+SHODAN : the "dark" google
+
+
+
+What is SHODAN?
+Basic Operations
+Case Study 1 : .....
+Case Study 
+Case Study 
+Case Study n : .....
+Conculusion
+Questions ?
+
+
+
+
+
+WHAT IS SHODAN: 
+
+SHODAN (http://www.shodanhq.com/) is a
+computer search engine designed by web
+developer John Matherly
+(http://twitter.com/achillean)
+
+While SHODAN is a search engine, it is
+much different than content search
+engines like Google, Yahoo or Bing
+
+
+Typical search engines crawl for data on
+web pages and then index it for searching
+
+SHODAN interrogates ports and grabs the
+resulting banners, then indexes the
+banners (rather than the web content) for
+searching
+
+Rather than to locate specific content on a
+particular search term, SHODAN is
+designed to help the user find specific
+nodes (desktops, servers, routers,
+switches, etc.) with specific content in their
+banners
+
+Optimizing search results requires some
+basic knowledge of banners
+
+
+
+
+
+
+BASIC OPERATIONS:
+filters :
+country: filters results by two letter country code
+hostname: filters results by specified text in the
+hostname or domain
+net: filter results by a specific IP range or subnet
+os: search for specific operating systems
+port: narrow the search for specific services
+
+
+apache country:"TN"
+nginx country:"TN"
+
+
+Popular searches are found in the main page
+shodan images
+shodan maps
+
+
+
+
+CONSLUSION:
+SHODAN aggregates a significant amount
+of information that isn‟t already widely
+available in an easy to understand format
+
+
+
+
+
+
+
+
+
+
+
+CASE STUDY : 
+"default password"
+The „default password‟ search locates
+servers that have those words in the
+banner
+
+
+
+
+
+CASE STUDY :
+"Server: Prismview Player"
+Samsung Electronic Billboards
+
+
+
+
+CASE STUDY :
+"in-tank inventory" port:10001
+Gas Station Pump Controllers
+
+
+
+CASE STUDY : 
+http.title:"Tesla PowerPack System" http.component:"d3" -ga3ca4f2
+Tesla PowerPack Charging Status
+more details: https://www.tesla.com/powerpack
+
+
+CASE STUDY : 
+"Server: CarelDataServer" "200 Document follows"
+CAREL PlantVisor Refrigeration Units
+more details : https://www.carel.com/product/plantvisor
+
+
+
+CASE STUDY : 
+"Set-Cookie: mongo-express=" "200 OK"
+Mongo Express Web GUI
+
+
+CASE STUDY : (printers)
+hp:
+"Serial Number:" "Built:" "Server: HP HTTP"
+Xerox:
+ssl:"Xerox Generic Root"
+Epson:
+"Server: EPSON-HTTP" "200 OK"
+"SERVER: EPSON_Linux UPnP" "200 OK"
+Canon:
+"Server: KS_HTTP" "200 OK"
+"Server: CANON HTTP Server"
+printers used in administrations:
+"RICOH MP"
+3d printers:
+title:"OctoPrint" -title:"Login" http.favicon.hash:1307375944
+
+
+
+CAMERAS :
+https://beta.shodan.io/host/199.79.254.179
+https://beta.shodan.io/host/82.91.17.24
+https://beta.shodan.io/host/61.58.202.2
+
+WITH CONTROLS:
+https://beta.shodan.io/host/96.92.172.65#80
+
+
+TUNISIA:
+https://beta.shodan.io/host/41.231.113.234#8080
+
+METRO STATION TUNISIA:
+https://beta.shodan.io/host/197.24.247.168#80
+
+BIG SUPRISE :
+https://beta.shodan.io/host/41.227.221.207#8181
+
+
+
+
+OTHERS:
+"mikrotik streetlight" : Traffic Light Controllers / Red Light Cameras
+"[2J[H Encartele Confidential" : Prison Pay Phones
+"title:"Slocum Fleet Mission Control"" : Submarine Mission Control Dashboards
+"http.title:"Nordex Control" "Windows 2000 5.0 x86" "Jetty/3.1 (JSP 1.1; Servlet 2.2; java 1.6.0_14)"" : Nordex Wind Turbine Farms
+"[1m[35mWelcome on console" : C4 Max Commercial Vehicle GPS Trackers
+"DICOM Server Response" port:104  : DICOM Medical X-Ray Machines
+
+
+
